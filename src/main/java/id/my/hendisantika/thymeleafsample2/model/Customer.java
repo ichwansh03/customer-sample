@@ -62,6 +62,9 @@ public class Customer {
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 
+    @Column(name = "updated_at")
+    private LocalDateTime updatedAt;
+
     public String getPhotosImagePath() {
         if (photo == null || id == null) return null;
 
